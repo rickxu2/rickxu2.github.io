@@ -1,0 +1,12 @@
+* {
+    font-family: "Arial";
+    text-align: center;
+}
+
+body {
+    background-color: rgb(177, 202, 239);
+}
+
+h4 {
+    display: inline;
+}
