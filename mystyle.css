@@ -1,12 +1,33 @@
 * {
     font-family: "Arial";
     text-align: center;
+    color:bisque;
 }
 
 body {
-    background-color: rgb(177, 202, 239);
+    background-color: rgb(26, 30, 80);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 h4 {
     display: inline;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+button {
+    color:darkcyan
+}
+
+a {
+    font-size: 24px;
+    font-style: normal;
+    color:darkgreen
 }
