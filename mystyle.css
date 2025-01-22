@@ -1,35 +1,72 @@
-* {
-    font-family: "Arial";
-    text-align: center;
-    color:bisque;
-}
+/* mystyle.css */
 
+/* General page setup */
 body {
-    background-color: rgb(26, 30, 80);
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-h2 {
-    font-size: 30px;
+/* Headings */
+h2, h3, h4 {
+    color: #444;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-h3 {
-    font-size: 24px;
+/* Paragraphs */
+p {
+    line-height: 1.5;
+    margin-bottom: 1em;
 }
 
-h4 {
-    display: inline;
-    font-size: 24px;
-    font-weight: 100;
-    margin-inline-start: 15px;
-    margin-inline-end: 15px;
-}
-
-button {
-    color:darkcyan
-}
-
+/* Hyperlinks */
 a {
-    font-size: 24px;
-    font-style: normal;
-    color:rgb(173, 252, 173)
+    color: #0563c1;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: #0563c1;
+    color: #fff;
+    border: none;
+    padding: 0.6em 1em;
+    margin: 0.2em 0.2em 0.2em 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #004a98;
+    transition: background-color 0.3s;
+}
+
+/* Container that holds all courses in a 2-column grid */
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 2 columns */
+    gap: 20px;                      /* space between columns and rows */
+    margin-bottom: 2em;             /* spacing below each course section */
+}
+
+/* Each course “card” or block */
+.course {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Optional smaller headings inside a course card */
+h4 {
+    font-size: 1.1em;
+    margin-bottom: 0.4em;
+    color: #666;
 }
