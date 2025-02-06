@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .experience, .projects {
+      margin-bottom: 2rem;
+    }
+    .project {
+      margin-bottom: 1rem;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .video-wrapper {
+      margin-top: 1rem;
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+  
+  <main>
+    <!-- Introduction Section -->
+    <section class="introduction">
+      <h2>Hello!</h2>
+      <p>Welcome to my portfolio. I’m <strong>Your Name</strong>, a software developer and technology enthusiast.</p>
+      <p>Below, you’ll find some of my key experiences and personal projects.</p>
+    </section>
+    
+    <!-- Experience Section -->
+    <section class="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Company A</strong> (Jan 2020 - Present) - Front-End Developer, working on modern JavaScript frameworks</li>
+        <li><strong>Company B</strong> (Jun 2018 - Dec 2019) - Backend Developer, specialized in Node.js and Express</li>
+        <!-- Add more experiences or roles as needed -->
+      </ul>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Projects</h2>
+      
+      <!-- Example Project with Video -->
+      <div class="project">
+        <h3>Project A: Cool Web App</h3>
+        <p>A brief description of your project, the tech stack, and what problem it solves.</p>
+        <div class="video-wrapper">
+          <!-- Example embed from YouTube -->
+          <iframe 
+            src="https://www.youtube.com/embed/VIDEO_ID" 
+            allowfullscreen
+            title="Project A Demo"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Another Example Project with Video -->
+      <div class="project">
+        <h3>Project B: Mobile App Demo</h3>
+        <p>Another short description. Tools, technologies, or frameworks used, and interesting details.</p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            allowfullscreen
+            title="Project B Demo"
+          ></iframe>
+        </div>
+      </div>
+      
+      <!-- Add additional projects here -->
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
