@@ -63,16 +63,24 @@
     <!-- Introduction Section -->
     <section class="introduction">
       <h2>Hello!</h2>
-      <p>Welcome to my portfolio. I’m <strong>Your Name</strong>, a software developer and technology enthusiast.</p>
-      <p>Below, you’ll find some of my key experiences and personal projects.</p>
+      <p>Welcome to my portfolio. I'm <strong>Richard Xu</strong>, also known as <strong>Rick</strong>  
+        an undergraduate student studying Computer Engineering, mainly interested in Robotics @ the University of Illinoise at Urbana-Champaign. </p>
+      <p>Below, you'll find some of my key experiences and personal projects.</p>
     </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <p><strong>University of Illinois</strong> (August 2023 - Present) - Bachelor of Science in Computer Engineering</p>
+      <p><strong>Fudan International School</strong> (May 2023) - International baccalaureate Diploma (IBDP)</p>
     
     <!-- Experience Section -->
     <section class="experience">
       <h2>Experience</h2>
       <ul>
-        <li><strong>Company A</strong> (Jan 2020 - Present) - Front-End Developer, working on modern JavaScript frameworks</li>
-        <li><strong>Company B</strong> (Jun 2018 - Dec 2019) - Backend Developer, specialized in Node.js and Express</li>
+        <li><strong>University of Illinois</strong> (August 2024 - Present) - Course Assistant and Grader - Hold office hours and grade coursework for ECE220 and ECE391 students at UIUC.</li>
+        <li><strong>FIRST Robotics Competition Team 6907</strong> (May 2023 - Present) - Mentor: Guide students to program, maintain and design robots for the competition.</li>
+        <li><strong>Argon Hydrogen StudioB</strong> (April 2020 - September 2021) - Science Video Translator: •	Collaborate and contribute to science videos by translating captions from Chinese to English.</li>
         <!-- Add more experiences or roles as needed -->
       </ul>
     </section>
@@ -83,30 +91,57 @@
       
       <!-- Example Project with Video -->
       <div class="project">
-        <h3>Project A: Cool Web App</h3>
-        <p>A brief description of your project, the tech stack, and what problem it solves.</p>
-        <div class="video-wrapper">
-          <!-- Example embed from YouTube -->
+        <h3>RISC-V Operating System</h3>
+        <p>As a part of the ECE391 Coursework, I work in a team of 3 to develop a working UNIX-like Operating System running on QEMU
+            for the RISC-V architecture. The functions of the OS includes a shell, VirtIO device drivers, a virtual memory system, an user process system
+            and a file system. The project is written in C and Assembly.</p> 
+        </p>
+        <!-- <div class="video-wrapper">
+          Example embed from YouTube
           <iframe 
             src="https://www.youtube.com/embed/VIDEO_ID" 
             allowfullscreen
             title="Project A Demo"
           ></iframe>
-        </div>
+        </div> -->
       </div>
 
       <!-- Another Example Project with Video -->
       <div class="project">
-        <h3>Project B: Mobile App Demo</h3>
-        <p>Another short description. Tools, technologies, or frameworks used, and interesting details.</p>
-        <div class="video-wrapper">
+        <h3>Robot Localization Using AprilTags and Swerve Odometry (FRC)</h3>
+        <p>With a team, we build a localization system for FIRST Robotics Competitio Robot based on WPILib and PhotonVision. 
+            The AprilTag detection system is runned on an RK3588 Processor and communicates with the NI RoboRIO to provide localoization data.
+            The system on the NI RoboRIO fuses Odometry, which is calculated from drivetrain motor data, and the Apriltag vision system.
+        </p>
+        <!-- <div class="video-wrapper">
           <iframe
             src="https://www.youtube.com/embed/VIDEO_ID"
             allowfullscreen
             title="Project B Demo"
           ></iframe>
-        </div>
+        </div> -->
       </div>
+
+      <div class="project">
+        <h3>6-DOF robotics Arm Programming on STM32(RoboMaster)</h3>
+        <p>
+            As a major developer in a team, I programmed a robot with a 6-DOF robotics arm and a Swerve drivetrain. 
+            I developed an on-board(STM32) inverse kinematics algorithm for both the robotics arm and the Swerve Drivetrain.
+            The objectives of the robot is to collect foam cubes using an end effector and transport them to a different location with a specific pose.
+            The robot is controlled by 2 STM32 microcontrollers, 1 for the arm and another for the drive train. 
+            The communication between two microcontrollers and between the motors and the controllers are through CAN bus.
+            The robot is controlled by a drone controller whose data ports are modified to get inputs from a desktop arm with the same configuration built with servos.
+            
+        </p>
+        <!-- <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            allowfullscreen
+            title="Project B Demo"
+          ></iframe>
+        </div> -->
+      </div>
+      
       
       <!-- Add additional projects here -->
     </section>
