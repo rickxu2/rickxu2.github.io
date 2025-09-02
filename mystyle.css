@@ -71,7 +71,7 @@ button:hover {
 }
 .btn:hover, .btn:focus {
     background-color: #004a98;
-    text-decoration: underline;
+    text-decoration: none;
     box-shadow: 0 4px 16px rgba(5,99,193,0.15);
     transform: translateY(-2px) scale(1.03);
 }
