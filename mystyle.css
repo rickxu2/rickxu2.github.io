@@ -121,7 +121,8 @@ button:hover {
     box-shadow: 0 2px 8px rgba(5,99,193,0.08);
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
     gap: 0.3em;
-    line-height: 1;
+    line-height: 1.2;
+    min-height: 2.5em;
 }
 .btn:hover, .btn:focus {
     background-color: #004a98;
@@ -161,20 +162,34 @@ h4 {
 
 /* Platform logo class for consistent sizing and alignment */
 .platform-logo {
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     margin-right: 4px;
     object-fit: contain;
     display: block;
     flex-shrink: 0;
 }
 
+/* Force clean display for all images and SVGs in buttons */
+.btn img,
+.btn svg {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Only hide the SVG fallbacks that should be hidden */
+.btn svg[style*="display:none"] {
+    display: none !important;
+}
+
 /* Icon fallback styles */
 .icon {
-    display: inline-flex;
-    align-items: center;
+    display: inline-flex !important;
+    align-items: center !important;
     gap: 4px;
     flex-shrink: 0;
+    height: 20px;
 }
 
 .icon img {
@@ -187,6 +202,39 @@ h4 {
     display: none;
     width: 20px;
     height: 20px;
+}
+
+/* Add a class for fallback SVGs and override inline styles */
+.fallback-svg,
+svg[style*="vertical-align:middle;display:none"] {
+    display: none !important;
+    vertical-align: unset !important;
+}
+
+/* Override inline styles for images */
+img[style*="vertical-align:middle"] {
+    vertical-align: unset !important;
+}
+
+/* Override any inline styles that might interfere with flexbox alignment */
+.btn .icon img,
+.btn .icon svg,
+.btn svg,
+.btn .platform-logo {
+    display: block !important;
+    margin: 0 !important;
+}
+
+/* Force proper display for hidden SVG fallbacks */
+.btn svg[style*="display:none"],
+.btn img[style*="display:none"] {
+    display: none !important;
+}
+
+/* Ensure all buttons have consistent minimum height */
+.btn {
+    min-height: 2.8em;
+    box-sizing: border-box;
 }
 
 /* When image fails to load via onerror, show SVG fallback */
