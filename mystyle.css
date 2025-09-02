@@ -121,6 +121,7 @@ button:hover {
     box-shadow: 0 2px 8px rgba(5,99,193,0.08);
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
     gap: 0.3em;
+    line-height: 1;
 }
 .btn:hover, .btn:focus {
     background-color: #004a98;
@@ -162,9 +163,10 @@ h4 {
 .platform-logo {
     width: 20px;
     height: 20px;
-    vertical-align: middle;
     margin-right: 4px;
     object-fit: contain;
+    display: block;
+    flex-shrink: 0;
 }
 
 /* Icon fallback styles */
@@ -172,21 +174,17 @@ h4 {
     display: inline-flex;
     align-items: center;
     gap: 4px;
+    flex-shrink: 0;
 }
 
 .icon img {
     width: 20px;
     height: 20px;
-    vertical-align: middle;
+    display: block;
 }
 
 .icon svg {
-    vertical-align: middle;
     display: none;
-}
-
-/* Fallback SVG styles for specific platforms */
-.icon svg {
     width: 20px;
     height: 20px;
 }
