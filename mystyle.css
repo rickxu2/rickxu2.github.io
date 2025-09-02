@@ -106,7 +106,8 @@ button:hover {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     background-color: #0563c1;
     color: #fff;
     border: none;
@@ -119,6 +120,7 @@ button:hover {
     text-decoration: none;
     box-shadow: 0 2px 8px rgba(5,99,193,0.08);
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    gap: 0.3em;
 }
 .btn:hover, .btn:focus {
     background-color: #004a98;
@@ -205,11 +207,94 @@ img[style*="display:none"] + svg {
         font-size: 2rem;
     }
     
+    header p {
+        font-size: 1rem;
+    }
+    
     main {
         padding: 1rem;
     }
     
     .quick-links {
         padding: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5em 0.8em;
+        margin: 0.1em 0.1em 0.1em 0;
+        display: inline-block;
+        width: auto;
+    }
+    
+    .course {
+        padding: 1em 0.8em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    h4 {
+        font-size: 1em;
+        margin-bottom: 0.3em;
+    }
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+    
+    main {
+        padding: 0.5rem;
+    }
+    
+    .quick-links {
+        padding: 0.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.4em 0.6em;
+        margin: 0.1em 0.05em;
+        word-break: break-word;
+    }
+    
+    .course {
+        padding: 0.8em 0.6em;
+    }
+    
+    .icon img, .icon svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .platform-logo {
+        width: 16px;
+        height: 16px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 }
