@@ -1,204 +1,387 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Xu - Course Links & Academic Resources</title>
+    <meta name="description" content="Academic course links and resources for Rick Xu's university studies">
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
-
 <body>
-    <button onclick="window.location.href='https://www.gradescope.com'">
-    Gradescope </button>
+    <header>
+        <h1>Academic Course Dashboard</h1>
+        <p>Quick access to course websites and resources</p>
+    </header>
 
-    <button onclick="window.location.href='https://us.prairielearn.com'">
-    PraireLearn</button>
+    <main>
+        <section class="quick-links">
+            <h2>Quick Access Links</h2>
+            <a href="https://www.gradescope.com" class="btn" target="_blank" rel="noopener">
+              <span class="icon gradescope-icon" aria-label="Gradescope">
+                <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+              </span>
+              Gradescope
+            </a>
+            <a href="https://us.prairielearn.com" class="btn" target="_blank" rel="noopener">
+              <span class="icon pl-icon" aria-label="Prai rieLearn">
+                <img src="logos/prairielearn.png" alt="PrairieLearn Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#F9B233"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">PL</text></svg>
+              </span>
+              PrairieLearn
+            </a>
+        </section>
 
-    <h2>Fall 2025 Info and Links</h2>
+        <section class="semester-courses">
+            <h2>Fall 2025 Info and Links</h2>
 
     <div class="courses">
+            <div class="course">
+                <h3><span class="icon ece-icon" aria-label="Circuits"><img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg></span> ECE 444</h3>
+                <a href="https://fabweb.ece.illinois.edu/" class="btn" target="_blank" rel="noopener">
+                  <span class="icon illinois-icon" aria-label="Illinois">
+                    <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+                  </span>
+                  Course Website
+                </a>
+                <a href="https://canvas.illinois.edu/courses/62911" class="btn" target="_blank" rel="noopener">
+                  <span class="icon canvas-icon" aria-label="Canvas"><img src="logos/canvas.png" alt="Canvas Logo" class="platform-logo"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">C</text></svg></span>
+                  Canvas
+                </a>
+            </div>
+
         <div class="course">
-            <h3>ECE 444</h3>
-            <button onclick="window.location.href='https://fabweb.ece.illinois.edu/'">
-            Course Website</button>
-            <button onclick="window.location.href='https://canvas.illinois.edu/courses/62911'">
-            Canvas</button>
+            <h3><span class="icon chip-icon" aria-label="Microcontrollers"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><rect x="6" y="6" width="8" height="8" fill="#fff"/><rect x="8" y="8" width="4" height="4" fill="#0563c1"/></svg></span> ECE 490</h3>
+            <a href="https://courses.grainger.illinois.edu/ece490/fa2025/index.html" class="btn" target="_blank" rel="noopener">
+              <span class="icon illinois-icon" aria-label="Illinois">
+                <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+              </span>
+              Course Website
+            </a>
+            <a href="https://piazza.com/class/mehpfpjp9wc3wn" class="btn" target="_blank" rel="noopener">
+              <span class="icon piazza-icon" aria-label="Piazza"><img src="logos/piazza.png" alt="Piazza Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#00599C"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">P</text></svg></span>
+              Piazza
+            </a>
+            <a href="https://www.gradescope.com/courses/1088436" class="btn" target="_blank" rel="noopener">
+              <span class="icon gradescope-icon" aria-label="Gradescope"><img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+              <!-- fallback SVG if image missing -->
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg></span>
+              HW Gradescope
+            </a>
         </div>
 
         <div class="course">
-            <h3>ECE 490</h3>
-            <button onclick="window.location.href=''">
-            Course Website</button>
-            <button onclick="window.location.href=''">
-            Queue</button>
+            <h3><span class="icon math-icon" aria-label="Math"><svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" dy=".3em">Σ</text></svg></span> ECE 405</h3>
+            <a href="https://canvas.illinois.edu/courses/62956" class="btn" target="_blank" rel="noopener">
+              <span class="icon canvas-icon" aria-label="Canvas"><img src="logos/canvas.png" alt="Canvas Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">C</text></svg></span>
+              Canvas
+            </a>
+            <a href="https://piazza.com/class/meqlvib5rzl2zs" class="btn" target="_blank" rel="noopener">
+              <span class="icon piazza-icon" aria-label="Piazza"><img src="logos/piazza.png" alt="Piazza Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#00599C"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">P</text></svg></span>
+              Piazza
+            </a>
         </div>
 
         <div class="course">
-            <h3>ECE 405</h3>
-            <button onclick="window.location.href='https://canvas.illinois.edu/courses/62956'">
-            Canvas</button>
+            <h3><span class="icon cs-icon" aria-label="Computer Science"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><rect x="5" y="5" width="10" height="10" fill="#fff"/><rect x="8" y="8" width="4" height="4" fill="#0563c1"/></svg></span> CS 441</h3>
+            <a href="https://canvas.illinois.edu/courses/61117" class="btn" target="_blank" rel="noopener">
+              <span class="icon canvas-icon" aria-label="Canvas"><img src="logos/canvas.png" alt="Canvas Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">C</text></svg></span>
+              Canvas
+            </a>
+            <a href="https://courses.grainger.illinois.edu/cs441/fa2025/" class="btn" target="_blank" rel="noopener">
+              <span class="icon illinois-icon" aria-label="Illinois">
+                <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+              </span>
+              Course Website
+            </a>
+            <a href="https://campuswire.com/c/GED989902/feed" class="btn" target="_blank" rel="noopener">
+              <span class="icon campuswire-icon" aria-label="Campuswire"><img src="logos/campuswire.png" alt="Campuswire Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#6C63FF"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">CW</text></svg></span>
+              Campuswire
+            </a>
         </div>
 
         <div class="course">
-            <h3>CS 441</h3>
-            <button onclick="window.location.href='https://canvas.illinois.edu/courses/61117'">
-            Canvas</button>
+            <h3><span class="icon chip-icon" aria-label="Microcontrollers"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><rect x="6" y="6" width="8" height="8" fill="#fff"/><rect x="8" y="8" width="4" height="4" fill="#0563c1"/></svg></span> ECE 385</h3>
+            <a href="https://canvas.illinois.edu/courses/61663" class="btn" target="_blank" rel="noopener">
+              <span class="icon canvas-icon" aria-label="Canvas"><img src="logos/canvas.png" alt="Canvas Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">C</text></svg></span>
+              Canvas
+            </a>
         </div>
+        </section>
 
-        <div class="course">
-            <h3>ECE 385</h3>
-            <button onclick="window.location.href='https://canvas.illinois.edu/courses/61663'">
-            Canvas</button>
-        </div>
-    </div>
-
-    <h2>Spring 2025 Info and Links</h2>
+        <section class="semester-courses">
+            <h2>Spring 2025 Info and Links</h2>
 
     <div class="courses"> 
-
         <div class="course">
-            <h3> CARE </h3>
-            <button onclick="window.location.href='https://queue.illinois.edu/q/queue/834'">
-            CARE</button>
+            <h3><span class="icon support-icon" aria-label="Support"><svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" dy=".3em">?</text></svg></span> CARE </h3>
+            <a href="https://queue.illinois.edu/q/queue/834" class="btn" target="_blank" rel="noopener">
+              <span class="icon queue-icon" aria-label="Queue"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">Q</text></svg></span>
+              CARE
+            </a>
         </div>
-        
         <div class="course">
-            <h3>ECE 220</h3>
-            <button onclick="window.location.href='https://queue.illinois.edu/q/queue/998'">
-            Queue</button>
+            <h3><span class="icon chip-icon" aria-label="Microcontrollers"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><rect x="6" y="6" width="8" height="8" fill="#fff"/><rect x="8" y="8" width="4" height="4" fill="#0563c1"/></svg></span> ECE 220</h3>
+            <a href="https://queue.illinois.edu/q/queue/998" class="btn" target="_blank" rel="noopener">
+              <span class="icon queue-icon" aria-label="Queue"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">Q</text></svg></span>
+              Queue
+            </a>
+        </div>
+        <div class="course">
+            <h3><span class="icon chip-icon" aria-label="Microcontrollers"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><rect x="6" y="6" width="8" height="8" fill="#fff"/><rect x="8" y="8" width="4" height="4" fill="#0563c1"/></svg></span> ECE 391</h3>
+            <a href="https://courses.grainger.illinois.edu/ece391/sp2025/" class="btn" target="_blank" rel="noopener">
+              <span class="icon illinois-icon" aria-label="Illinois">
+                <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+              </span>
+              Course Website
+            </a>
+            <a href="https://queue.illinois.edu/q/queue/980" class="btn" target="_blank" rel="noopener">
+              <span class="icon queue-icon" aria-label="Queue"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">Q</text></svg></span>
+              Queue
+            </a>
         </div>
 
         <div class="course">
-            <h3>ECE 391</h3>
-            <button onclick="window.location.href='https://courses.grainger.illinois.edu/ece391/sp2025/'">
-            Course Website</button>
-
-            <button onclick="window.location.href='https://queue.illinois.edu/q/queue/980'">
-            Queue</button>
-        </div>
-
-        <div class="course">
-            <h3>ECE 313</h3>
-            <button onclick="window.location.href='https://courses.grainger.illinois.edu/ece313/sp2025/'">
-            Course Website</button>
-            <button onclick="window.location.href='https://www.gradescope.com/courses/961213'">
-            HW Gradescope</button>
+            <h3><span class="icon ece-icon" aria-label="ECE"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">E</text></svg></span> ECE 313</h3>
+            <a class="btn" href="https://courses.grainger.illinois.edu/ece313/sp2025/">
+              <span class="icon illinois-icon" aria-label="Illinois">
+                <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+              </span>
+              Course Website
+            </a>
+            <a class="btn" href="https://www.gradescope.com/courses/961213">
+              <span class="icon gradescope-icon" aria-label="Gradescope">
+                <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+              </span>
+              HW Gradescope
+            </a>
             <p>Grade Components: Gradescope HW, In-class Quizzes, Exams</p>
         </div>
         
         <div class="course">
-            <h3>ECE 340</h3>
-            <button onclick="window.location.href='https://courses.grainger.illinois.edu/ece340/sp2025/index.html'">
-            Course Website</button>
-            <button onclick="window.location.href='https://www.gradescope.com/courses/958839'">
-            HW Gradescope</button>
+            <h3><span class="icon ece-icon" aria-label="ECE"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">E</text></svg></span> ECE 340</h3>
+            <a class="btn" href="https://courses.grainger.illinois.edu/ece340/sp2025/index.html">
+              <span class="icon illinois-icon" aria-label="Illinois">
+                <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+              </span>
+              Course Website
+            </a>
+            <a class="btn" href="https://www.gradescope.com/courses/958839">
+              <span class="icon gradescope-icon" aria-label="Gradescope">
+                <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+              </span>
+              HW Gradescope
+            </a>
 
             <p>Grade Components: Gradescope/Canvas Homework, Exams</p>
         </div>
 
         <div class="course">
-            <h3>CS 374</h3>
-            <button onclick="window.location.href='https://courses.grainger.illinois.edu/cs374al1/sp2025/'">
-            Course Website</button>
+            <h3><span class="icon cs-icon" aria-label="Computer Science"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><rect x="5" y="5" width="10" height="10" fill="#fff"/><rect x="8" y="8" width="4" height="4" fill="#0563c1"/></svg></span> CS 374</h3>
+            <a class="btn" href="https://courses.grainger.illinois.edu/cs374al1/sp2025/">
+              <span class="icon illinois-icon" aria-label="Illinois">
+                <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+              </span>
+              Course Website
+            </a>
 
-            <button onclick="window.location.href='https://www.gradescope.com/courses/941778'">
-            HW Gradescope</button>
+            <a class="btn" href="https://www.gradescope.com/courses/941778">
+              <span class="icon gradescope-icon" aria-label="Gradescope">
+                <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+              </span>
+              HW Gradescope
+            </a>
             <p>Grade Components: PrarieLearn & Gradescope HW, Exams</p>
         </div>
 
         <div class="course">
-            <h3>ECE 385</h3>
-            <button onclick="window.location.href='https://canvas.illinois.edu/courses/56186'">
-            Canvas Course</button>
+            <h3><span class="icon chip-icon" aria-label="Microcontrollers"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#0563c1"/><rect x="6" y="6" width="8" height="8" fill="#fff"/><rect x="8" y="8" width="4" height="4" fill="#0563c1"/></svg></span> ECE 385</h3>
+            <a class="btn" href="https://canvas.illinois.edu/courses/56186">
+              <span class="icon canvas-icon" aria-label="Canvas">
+                <img src="logos/canvas.png" alt="Canvas Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">C</text></svg>
+              </span>
+              Canvas Course
+            </a>
             <p>Grade Components: Labs, Final Projects, Quizzes</p>
         </div>
 
         <div class="course">
-            <h3>ECE 486</h3>
-            <button onclick="window.location.href='https://courses.grainger.illinois.edu/ece486/sp2025/'">
-            Course Website</button>
-            <button onclick="window.location.href='https://www.gradescope.com/courses/947869'">
-            HW Gradescope</button>
-            <button onclick="window.location.href='https://www.gradescope.com/courses/969657'">
-            Lab Gradescope</button>
+            <h3><span class="icon ece-icon" aria-label="ECE"><svg width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">E</text></svg></span> ECE 486</h3>
+            <a class="btn" href="https://courses.grainger.illinois.edu/ece486/sp2025/">
+              <span class="icon illinois-icon" aria-label="Illinois">
+                <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+              </span>
+              Course Website
+            </a>
+            <a class="btn" href="https://www.gradescope.com/courses/947869">
+              <span class="icon gradescope-icon" aria-label="Gradescope">
+                <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+              </span>
+              HW Gradescope
+            </a>
+            <a class="btn" href="https://www.gradescope.com/courses/969657">
+              <span class="icon gradescope-icon" aria-label="Gradescope">
+                <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+              </span>
+              Lab Gradescope
+            </a>
             <p>Grade Components: GradeScope Homework, Lab, Exams </p>
         </div>
+        </section>
 
-    </div>
-
-    <h2>Spring 2024 Info and Links</h2>
+        <section class="semester-courses">
+            <h2>Spring 2024 Info and Links</h2>
 
     <div class="courses">
         <div class="course">
             <h3>MATH 285</h3>
             <h4>HW: </h4>
-            <button onclick="window.location.href='https://us.prairielearn.com/pl/course_instance/147266/assessments'">
-            PraireLearn</button>
+            <a class="btn" href="https://us.prairielearn.com/pl/course_instance/147266/assessments" target="_blank" rel="noopener">
+                <span class="icon pl-icon" aria-label="PrairieLearn">
+                    <img src="logos/prairielearn.png" alt="PrairieLearn Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#F9B233"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">PL</text></svg>
+                </span>
+                PraireLearn
+            </a>
             <h4>Question: </h4>
-            <button onclick="window.location.href='https://campuswire.com/c/GE4D83E42/feed'">
-            CampusWire</button>
+            <a class="btn" href="https://campuswire.com/c/GE4D83E42/feed" target="_blank" rel="noopener">
+                <span class="icon campuswire-icon" aria-label="Campuswire">
+                    <img src="logos/campuswire.png" alt="Campuswire Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#6C63FF"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">CW</text></svg>
+                </span>
+                CampusWire
+            </a>
             <h4>Info & Video:</h4>
-            <button onclick="window.location.href='https://canvas.illinois.edu/courses/44060'">
-            Canvas</button>
+            <a class="btn" href="https://canvas.illinois.edu/courses/44060" target="_blank" rel="noopener">
+                <span class="icon canvas-icon" aria-label="Canvas">
+                    <img src="logos/canvas.png" alt="Canvas Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">C</text></svg>
+                </span>
+                Canvas
+            </a>
             <p>Grade Components: PraireLearn HW + Quiz, Exams</p>
-            
         </div>
         
         <div class="course">
             <h3>MATH 257</h3>
             <h4>HW:</h4>
-            <button onclick="window.location.href='https://us.prairielearn.com/pl/course_instance/145582/assessments'">
-                PraireLearn</button>
-
+            <a class="btn" href="https://us.prairielearn.com/pl/course_instance/145582/assessments" target="_blank" rel="noopener">
+                <span class="icon pl-icon" aria-label="PrairieLearn">
+                    <img src="logos/prairielearn.png" alt="PrairieLearn Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#F9B233"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">PL</text></svg>
+                </span>
+                PraireLearn
+            </a>
             <h4>Question:</h4>
-            <button onclick="window.location.href='https://campuswire.com/c/GE4D83E42/feed'">
-                CampusWire</button>
+            <a class="btn" href="https://campuswire.com/c/GE4D83E42/feed" target="_blank" rel="noopener">
+                <span class="icon campuswire-icon" aria-label="Campuswire">
+                    <img src="logos/campuswire.png" alt="Campuswire Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#6C63FF"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">CW</text></svg>
+                </span>
+                CampusWire
+            </a>
         </div>
 
         <div class="course">
             <h3>MATH 213</h3>
             <h4> Course Website:</h4>
-            <button onclick="window.location.href='https://learn.illinois.edu/course/view.php?id=77090'">
-                Moodle</button>
-        
+            <a class="btn" href="https://learn.illinois.edu/course/view.php?id=77090" target="_blank" rel="noopener">
+                <span class="icon moodle-icon" aria-label="Moodle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect width="20" height="20" rx="5" fill="#F9B233"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">M</text></svg>
+                </span>
+                Moodle
+            </a>
             <h4>Questions:</h4>
-            <button onclick="window.location.href='piazza.com/illinois/spring2024/math213e1x1'">
-                Piazza</button>
-        
+            <a class="btn" href="https://piazza.com/illinois/spring2024/math213e1x1" target="_blank" rel="noopener">
+                <span class="icon piazza-icon" aria-label="Piazza">
+                    <img src="logos/piazza.png" alt="Piazza Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#00599C"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">P</text></svg>
+                </span>
+                Piazza
+            </a>
             <p>Grade Components: Moodle HW, Exams</p>
         </div>
 
         <div class="course">
             <h3>ECE 220</h3>
             <h4>Course Website:</h4>
-            <button onclick="window.location.href='https://courses.grainger.illinois.edu/ece220/sp2024/'">
-                website</button>
+            <a class="btn" href="https://courses.grainger.illinois.edu/ece220/sp2024/" target="_blank" rel="noopener">
+                <span class="icon illinois-icon" aria-label="Illinois">
+                    <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+                </span>
+                website
+            </a>
             <h4>HW:</h4>
-            <button onclick="window.location.href='https://www.gradescope.com/courses/692259'">
-                GradeScope</button>
-        
+            <a class="btn" href="https://www.gradescope.com/courses/692259" target="_blank" rel="noopener">
+                <span class="icon gradescope-icon" aria-label="Gradescope">
+                    <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+                </span>
+                GradeScope
+            </a>
             <p>Grade Components: PrairieTest Quiz, MP, Lab(extra credit), Exams</p>
         </div>
 
         <div class="course">
             <h3>ECE 110</h3>
             <h4>Course Website:</h4>
-            <button onclick="window.location.href='https://canvas.illinois.edu/courses/42564'">
-                Canvas</button>
+            <a class="btn" href="https://canvas.illinois.edu/courses/42564" target="_blank" rel="noopener">
+                <span class="icon canvas-icon" aria-label="Canvas">
+                    <img src="logos/canvas.png" alt="Canvas Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#F47920"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">C</text></svg>
+                </span>
+                Canvas
+            </a>
             <h4>HW:</h4>
-            <button onclick="window.location.href='https://www.gradescope.com/courses/691334'">
-                GradeScope</button>
+            <a class="btn" href="https://www.gradescope.com/courses/691334" target="_blank" rel="noopener">
+                <span class="icon gradescope-icon" aria-label="Gradescope">
+                    <img src="logos/gradescope.png" alt="Gradescope Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><circle cx="10" cy="10" r="10" fill="#1A9D49"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">G</text></svg>
+                </span>
+                GradeScope
+            </a>
             <p>Grade Components: Homework(GradeScope, PraireLearn), Lab(30%) Attendance(1%), Quiz, Exams</p>
         </div>
 
         <div class="course">
             <h3>PHYS 213</h3>
             <h4>Course Website:</h4>
-            <button onclick="window.location.href='https://courses.physics.illinois.edu/phys213/sp2024/syllabus.html'">
-                Webpage</button>
+            <a class="btn" href="https://courses.physics.illinois.edu/phys213/sp2024/syllabus.html" target="_blank" rel="noopener">
+                <span class="icon illinois-icon" aria-label="Illinois">
+                    <img src="logos/illinois.png" alt="Illinois Logo" class="platform-logo" onerror="this.style.display='none'" style="width:20px;height:20px;vertical-align:middle;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;display:none;"><rect width="20" height="20" rx="5" fill="#13294B"/><text x="50%" y="55%" text-anchor="middle" fill="#F47920" font-size="12" font-family="Arial" dy=".3em">I</text></svg>
+                </span>
+                Webpage
+            </a>
             <h4>Smart Physics</h4>
-            <button onclick="window.location.href='https://smart.physics.illinois.edu/'">
-                Smart physics</button>
+            <a class="btn" href="https://smart.physics.illinois.edu/" target="_blank" rel="noopener">
+                <span class="icon smartphysics-icon" aria-label="SmartPhysics">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect width="20" height="20" rx="5" fill="#F9B233"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" dy=".3em">S</text></svg>
+                </span>
+                Smart physics
+            </a>
         </div>
-    </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Rick Xu - Academic Dashboard</p>
+    </footer>
 </body>
 </html>

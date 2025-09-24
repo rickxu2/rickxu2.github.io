@@ -1,17 +1,74 @@
 /* mystyle.css */
 
 /* General page setup */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin: 20px;
+    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Footer */
+header, footer {
+    background: linear-gradient(135deg, #13294B 0%, #0563c1 100%);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+}
+
+.quick-links {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 20px rgba(5,99,193,0.1);
 }
 
 /* Headings */
 h2, h3, h4 {
     color: #444;
     margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #0563c1;
     margin-bottom: 0.5em;
 }
 
@@ -48,20 +105,53 @@ button:hover {
     transition: background-color 0.3s;
 }
 
+.btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0563c1;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.4em;
+    margin: 0.2em 0.2em 0.2em 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(5,99,193,0.08);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    gap: 0.4em;
+    line-height: 1.2;
+    min-height: 3em;
+    box-sizing: border-box;
+}
+.btn:hover, .btn:focus {
+    background-color: #004a98;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(5,99,193,0.15);
+    transform: translateY(-2px) scale(1.03);
+}
+
 /* Container that holds all courses in a 2-column grid */
 .courses {
     display: grid;
-    grid-template-columns: 1fr 1fr;  /* 2 columns */
-    gap: 20px;                      /* space between columns and rows */
-    margin-bottom: 2em;             /* spacing below each course section */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 2em;
 }
 
 /* Each course “card” or block */
 .course {
-    background-color: #fff;
-    padding: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background: linear-gradient(135deg, #f9f9f9 60%, #e3eafc 100%);
+    padding: 1.2em 1em;
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(5,99,193,0.07);
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+.course:hover {
+    box-shadow: 0 6px 24px rgba(5,99,193,0.18);
+    transform: translateY(-2px) scale(1.01);
 }
 
 /* Optional smaller headings inside a course card */
@@ -69,4 +159,193 @@ h4 {
     font-size: 1.1em;
     margin-bottom: 0.4em;
     color: #666;
+}
+
+/* Platform logo class for consistent sizing and alignment */
+.platform-logo {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 4px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Force clean display for all images and SVGs in buttons */
+.btn img,
+.btn svg {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Only hide the SVG fallbacks that should be hidden */
+.btn svg[style*="display:none"] {
+    display: none !important;
+}
+
+/* Icon fallback styles */
+.icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px;
+    flex-shrink: 0;
+    height: 20px;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.icon svg {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+/* Add a class for fallback SVGs and override inline styles */
+.fallback-svg,
+svg[style*="vertical-align:middle;display:none"] {
+    display: none !important;
+    vertical-align: unset !important;
+}
+
+/* Override inline styles for images */
+img[style*="vertical-align:middle"] {
+    vertical-align: unset !important;
+}
+
+/* Override any inline styles that might interfere with flexbox alignment */
+.btn .icon img,
+.btn .icon svg,
+.btn svg,
+.btn .platform-logo {
+    display: block !important;
+    margin: 0 !important;
+}
+
+/* Force proper display for hidden SVG fallbacks */
+.btn svg[style*="display:none"],
+.btn img[style*="display:none"] {
+    display: none !important;
+}
+
+/* Ensure all buttons have consistent minimum height */
+.btn {
+    min-height: 2.8em;
+    box-sizing: border-box;
+}
+
+/* When image fails to load via onerror, show SVG fallback */
+img[style*="display:none"] + svg {
+    display: inline-block !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .courses {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .quick-links {
+        padding: 1rem;
+    }
+    
+    .btn {
+        font-size: 1.2rem;
+        padding: 1em 1.6em;
+        margin: 0.15em 0.15em 0.15em 0;
+        display: inline-flex;
+        width: auto;
+        min-height: 3.5em;
+        gap: 0.5em;
+    }
+    
+    .course {
+        padding: 1em 0.8em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    h4 {
+        font-size: 1em;
+        margin-bottom: 0.3em;
+    }
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+    
+    main {
+        padding: 0.5rem;
+    }
+    
+    .quick-links {
+        padding: 0.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        font-size: 1.1rem;
+        padding: 0.9em 1.4em;
+        margin: 0.15em 0.1em;
+        word-break: break-word;
+        min-height: 3.2em;
+        gap: 0.4em;
+    }
+    
+    .course {
+        padding: 0.8em 0.6em;
+    }
+    
+    .icon img, .icon svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .platform-logo {
+        width: 16px;
+        height: 16px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
 }
