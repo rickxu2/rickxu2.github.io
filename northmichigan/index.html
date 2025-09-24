@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Michigan Travel Itinerary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5530;
+            border-bottom: 3px solid #2c5530;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #4a7c59;
+            border-left: 4px solid #4a7c59;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #5d8a66;
+            margin-top: 25px;
+        }
+        .todo-list {
+            background-color: #fff8e1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+        }
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .cost-table th, .cost-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .cost-table th {
+            background-color: #4a7c59;
+            color: white;
+        }
+        .cost-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .cost-table tr:last-child {
+            font-weight: bold;
+            background-color: #e8f5e8;
+        }
+        .notes {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+        }
+        .notes ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .itinerary-day {
+            background-color: #f8f9fa;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .time {
+            font-weight: bold;
+            color: #d32f2f;
+            margin-right: 10px;
+        }
+        .location {
+            color: #1976d2;
+            font-weight: bold;
+        }
+        .cost {
+            background-color: #fff3e0;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #ef6c00;
+        }
+        .map-container {
+            margin: 15px 0;
+        }
+        .map-container iframe {
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .accommodation {
+            background-color: #fafafa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .option {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            border-left: 4px solid #4caf50;
+        }
+        .travel-note {
+            background-color: #fff3e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .photo-placeholder {
+            width: 400px;
+            height: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .cost-table {
+                font-size: 14px;
+            }
+            .map-container iframe {
+                width: 100%;
+                height: 250px;
+            }
+            .photo-placeholder {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍂 North Michigan Travel Itinerary</h1>
+        <p style="text-align: center; font-size: 18px; color: #666;">Friday Oct 3 – Sunday Oct 5, 2025</p>
+
+        <h2>📋 TODO</h2>
+        <div class="todo-list">
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>☐ 确定住宿地点</li>
+                <li>☐ Hertz 租车</li>
+                <li>☐ 看<a href="https://www.myforecast.com/15-day-forecast.php?cwid=gn4997249&metric=false&city_count=&zip_code=&condition=act&data=2103229252">天气</a>（最低夜里可能10℃），有可能下雨?</li>
+                <li>☐ 准备行李
+                    <ul>
+                        <li>☐ 证件（护照+驾照）</li>
+                        <li>☐ 衣服（冲锋衣/雨具）</li>
+                        <li>☐ 食物</li>
+                        <li>☐ 水</li>
+                        <li>☐ 无人机</li>
+                    </ul>
+                </li>
+                <li>☐ 景区门票（线下到那边买票）
+                    <ul>
+                        <li><a href="https://copperpeak.net/the-adventure-ride/">Copper Peak</a> <span class="cost">$28/person</span> full ride or <span class="cost">$20/person</span> Chairlift only</li>
+                        <li><a href="https://www.michigan.gov/dnr/buy-and-apply/rec-pp">Porcupine Mountains</a> <span class="cost">$11/car</span> day pass</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h2>💰 总花费</h2>
+        <table class="cost-table">
+            <tr>
+                <th>Item</th>
+                <th>Cost (for 3 people)</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>租车(不含保险)</td>
+                <td>$250 + $150 保险</td>
+                <td>$70/day × 3 days</td>
+            </tr>
+            <tr>
+                <td>油费</td>
+                <td>$250</td>
+                <td>约1400 miles, 20mpg, $3.5/gallon</td>
+            </tr>
+            <tr>
+                <td>住宿</td>
+                <td>$350</td>
+                <td>2晚，Madison $150 + Airbnb $180</td>
+            </tr>
+            <tr>
+                <td>食物</td>
+                <td>$100~$150/person</td>
+                <td>3天，路上和景区吃饭</td>
+            </tr>
+            <tr>
+                <td>门票</td>
+                <td>$32/person</td>
+                <td>$28/person copper peak + $11/car porcupine mountains</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>~$500/person</strong></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h2>⚠️ 注意事项</h2>
+        <div class="notes">
+            <ol>
+                <li>Michigan Upper Peninsula (U.P.) 早晚温差大，建议带冲锋衣/雨具。</li>
+                <li>景区内手机信号不太好，建议<span class="highlight">下载离线地图</span>。</li>
+                <li>Michigan和Illinois时区不同，Michigan比Illinois<span class="highlight">快1小时</span>。（Michigan 11点= Illinois 10点）</li>
+                <li>根据租的车油箱大小，看好加油站位置，Porcupine Mountains附近加油站不多，可在<span class="highlight">Ironwood加满油</span>。</li>
+                <li>景区内理论上<span class="highlight">不允许飞无人机</span>，可能得专门找地方飞。</li>
+            </ol>
+        </div>
+
+        <h2>🗓️ Friday Oct 3</h2>
+        <div class="itinerary-day">
+            <h3>行程</h3>
+            <p><span class="time">5pm</span> 香槟出发</p>
+            <p><span class="time">7pm</span> 2h 到芝加哥吃晚饭 (海底捞？)</p>
+            <p><span class="time">8-9pm</span> 吃完出发去Madison</p>
+            <p><span class="time">10:30-11pm</span> 2.5h到Madison住宿</p>
+            
+            <div class="travel-note">
+                <strong>备注:</strong><br>
+                UIUC → Chicago = 2h<br>
+                Chicago → Madison = 2.5h<br>
+                UIUC → Madison 3.5~4h<br><br>
+                去芝加哥吃晚饭有一点点绕路,吃火锅的话会有点晚，考虑香槟吃完再出发或者路上找地方吃?
+            </div>
+
+            <h3>住宿 - Madison, WI</h3>
+            <p>两个都可以18岁入住</p>
+            
+            <div class="option">
+                <h4>Option 1: <a href="https://www.ihg.com/holidayinn/hotels/us/en/find-hotels/select-roomrate">Holiday Inn & Suites Madison West - Middleton</a></h4>
+                <p>Madison西边，$150/Room，有沙发床可住3人</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11656.373961749037!2d-89.5212968!3d43.0815298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807af3c78c03357%3A0xa1aa43281003b208!2sHoliday%20Inn%20%26%20Suites%20Madison%20West%20-%20Middleton%20by%20IHG!5e0!3m2!1sen!2sus!4v1758665193641!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="option">
+                <h4>Option 2: <a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/find-hotels/select-roomrate">Holiday Inn Express & Suites Madison Central</a></h4>
+                <p>Madison湖边，~$250/Room, 有沙发床可住3人</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2915.6398350982568!2d-89.3783229!3d43.0490089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880652e65a6d170b%3A0x261847dde3452f4f!2sHoliday%20Inn%20Express%20%26%20Suites%20Madison%20Central%20by%20IHG!5e0!3m2!1sen!2sus!4v1758664992526!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <h2>🗓️ Saturday Oct 4</h2>
+        <div class="itinerary-day">
+            <h3>行程</h3>
+            <p><span class="time">8am-1pm</span> Madison 出发 → <span class="location">Ironwood</span> (4h) 吃午饭 (1pm为当地时间，考虑了时差)</p>
+            <p><span class="time">2pm</span> Ironwood 出发 → <span class="location">Copper Peak</span> (20min)</p>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43860.682874153616!2d-90.13088028065825!3d46.601218649783284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52a9dbfa1a616aa1%3A0x9eb8d80cfa5ca8d1!2sCopper%20Peak!5e0!3m2!1sen!2sus!4v1758666584389!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <p>Copper Peak: <span class="cost">$28</span> (includes chair lift + elevator to the top)</p>
+
+            <p><span class="time">3:30pm</span> Copper Peak 出发 → <span class="location">Presque Isle River Waterfalls</span> (45min)</p>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109193.90697043005!2d-90.10906483485677!3d46.687083471064966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d56284441dc8be7%3A0x277b9ce505fc5a83!2sPresque%20Isle%20River%20Waterfalls%20Loop%20Trailhead!5e0!3m2!1sen!2sus!4v1758666662791!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <p>这条小河附近有几个瀑布，远一点可以走到Lake Superior湖边。</p>
+
+            <p><span class="time">5pm</span> Presque Isle River Waterfalls 出发 → <span class="location">Lake of the Clouds</span> (1h20min)</p>
+            <p>这一段路属于野猪山公园里面，风景应该不错，会路过一些小景点比如The Porkies Roadside Park</p>
+
+            <div class="map-container">
+                <img src="images/image-2.png" alt="The Porkies Roadside Park" style="width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            </div>
+
+            <p><span class="time">6:30pm</span> 夕阳前到Lake of the Clouds （日落19:30）</p>
+
+            <div class="map-container">
+                <img src="images/image-1.png" alt="Lake of the Clouds Sunset" style="width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            </div>
+
+            <p><span class="time">7:30pm</span> 看完夕阳从Lake of the Clouds出发到Houghton (1hr20min) 吃晚饭，吃完住附近Airbnb。目前看到旁边的小镇Calumet (20min drive)有不错的3人可以住的小房子。</p>
+
+            <p><span class="time">9:00pm</span> 到Houghton/Calumet住宿</p>
+
+            <div class="travel-note">
+                <strong>备注:</strong> 一个下午玩完主要的景点，下午行程有一点点紧张，早上可以早点出发，最好备一点吃的，可以考虑晚饭在Houghton吃。
+            </div>
+
+            <h3>住宿 - Calumet/Houghton, MI</h3>
+            <p>Houghton附近没有可以18岁入住的酒店，Airbnb问过了可以18岁入住并且3人住一间。</p>
+
+            <div class="option">
+                <h4>Option 1: <a href="https://www.airbnb.com/rooms/1487886039955498255">Tanya</a></h4>
+                <div class="map-container">
+                    <img src="images/image-4.png" alt="Tanya's House - Exterior" style="width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); margin-bottom: 10px;">
+                    <img src="images/image-5.png" alt="Tanya's House - Interior" style="width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                </div>
+                <p>应该是独立房子，$183/晚</p>
+            </div>
+
+            <div class="option">
+                <h4>Option 2: <a href="https://www.airbnb.com/rooms/51655770">Michele</a></h4>
+                <div class="map-container">
+                    <img src="images/image-3.png" alt="Michele's Shared Space" style="width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                </div>
+                <p>需要跟别人share厨房和卫生间，$115/晚</p>
+            </div>
+        </div>
+
+        <h2>🗓️ Sunday Oct 5</h2>
+        <div class="itinerary-day">
+            <h3>行程</h3>
+            <p><span class="time">9:30am</span> Calumet/Houghton → <span class="location">Copper Harbor</span> (45min)</p>
+
+            <div class="map-container">
+                <img src="images/image-7.png" alt="Brockway Mountain Drive" style="width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+            </div>
+            <p><em>Photo taken at Brockway Mountain Drive</em></p>
+
+            <p><span class="time">11am</span> Copper Harbor → <span class="location">Houghton</span> (45min), 吃午饭</p>
+
+            <p><span class="time">1pm</span> Houghton → Iron River → Green Bay → Milwaukee → Chicago → UIUC (8~9h)</p>
+            <p>途中Milwaukee或者Chicago吃晚饭</p>
+
+            <h3>全程路线</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d3051.2928654647494!2d-88.23416159873399!3d40.11347641591107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x880cd747b0da1279%3A0x316b5442b1a3900a!2sCounty%20Market!3m2!1d40.113352299999995!2d-88.2339021!4m5!1s0x8807af3c78c03357%3A0xa1aa43281003b208!2sHoliday%20Inn%20%26%20Suites%20Madison%20West%20-%20Middleton%20by%20IHG!3m2!1d43.0820236!2d-89.5234474!4m5!1s0x52a9e84c4f806ed5%3A0x2c576b99fe6cfd83!2sIronwood%2C%20MI!3m2!1d46.4546698!2d-90.1710081!4m5!1s0x52a9dbfa1a616aa1%3A0x9eb8d80cfa5ca8d1!2sCopper%20Peak!3m2!1d46.6012152!2d-90.0902031!4m5!1s0x4d56284441dc8be7%3A0x277b9ce505fc5a83!2sPresque%20Isle%20River%20Waterfalls%20Loop%20Trailhead!3m2!1d46.6959162!2d-89.97380199999999!4m5!1s0x4d563496372baefb%3A0x10b50011b35aa3e2!2sLake%20of%20the%20Clouds%2C%20Carp%20Lake%20Township%2C%20MI!3m2!1d46.8068293!2d-89.7396718!4m5!1s0x4d50c830dcb62d85%3A0xbe72cbcecc04ef7d!2sHoughton%2C%20MI!3m2!1d47.121133099999994!2d-88.5694182!4m5!1s0x4d50bb83d59a5017%3A0xf905f183146fe27b!2sCalumet%2C%20MI!3m2!1d47.2500752!2d-88.4538271!4m5!1s0x4d5a83ab442ba0eb%3A0xca056ee77d4c790c!2sCopper%20Harbor%2C%20MI!3m2!1d47.468311299999996!2d-87.8903203!4m5!1s0x880cd08dde97691b%3A0x30f57847b475bfcf!2sChampaign%2C%20IL!3m2!1d40.116288399999995!2d-88.2435155!5e0!3m2!1sen!2sus!4v1758669016202!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f8f9fa; border-top: 1px solid #e9ecef;">
+            <p style="color: #666;">Created with ❤️ for our North Michigan Adventure</p>
+            <p style="color: #999; font-size: 14px;">
+                🌐 Website: <a href="https://rickxu2.github.io/northmichigan">rickxu2.github.io/northmichigan</a><br>
+                📱 <em>Upload your own photos to replace the placeholders!</em>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
