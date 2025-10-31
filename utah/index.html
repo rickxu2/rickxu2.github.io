@@ -1,0 +1,189 @@
+<!DOCTYPE html><html><head>
+      <title>行程</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Rick Xu\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.19\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <div>
+<h1 id="las-vegas--utah-saturday-1122--sunday-1130">Las Vegas &amp; Utah Saturday 11.22 – Sunday 11.30 </h1>
+<p><img src="image.png" alt="alt text"></p>
+<h3 id="全程">全程 </h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d1643184.7870347325!2d-114.00042622881561!3d36.44921102377613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x80c8cf60f29d3ca7%3A0x7e62d89e0ce1f750!2sHarry%20Reid%20Rental%20Car%20Center!3m2!1d36.0600388!2d-115.16460869999999!4m5!1s0x80cac4ede0e0b9d1%3A0x8017b530ed84020b!2sZion%20National%20Park%20Entrance%2C%20Utah!3m2!1d37.233187199999996!2d-112.875519!4m5!1s0x87356bc602c3eb2d%3A0x6be9d8fbbeac6d06!2sBryce%20Canyon%20National%20Park%2C%20Utah!3m2!1d37.5930377!2d-112.1870895!4m5!1s0x8734139684856e1f%3A0x2170c2722ad9e485!2sDixie's%20Lower%20Antelope%20Canyon%20Tours!3m2!1d36.9013214!2d-111.410263!4m5!1s0x87346ced52b21091%3A0xb623646960566829!2sHorseshoe%20Bend%2C%20Arizona!3m2!1d36.879061199999995!2d-111.5103627!4m5!1s0x87372e841bdd86a5%3A0x3eaaa99ad33bd890!2sMonument%20Valley%2C%20AZ!3m2!1d36.9913715!2d-110.1938672!4m5!1s0x80cc0654bd27e08d%3A0xb1c2554442d42e8d!2sGrand%20Canyon%2C%20Arizona!3m2!1d36.0997631!2d-112.1124846!4m5!1s0x80c8cf60f29d3ca7%3A0x7e62d89e0ce1f750!2sHarry%20Reid%20Rental%20Car%20Center!3m2!1d36.0600388!2d-115.16460869999999!5e0!3m2!1sen!2sus!4v1761789371816!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<h2 id="todo">TODO </h2>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 机票</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 确定住宿地点
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 买睡袋</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Hertz 租车</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 看<a href="https://www.myforecast.com/30-day-forecast.php?cwid=gn5536630&amp;metric=false&amp;city_count=&amp;zip_code=&amp;condition=act&amp;data=1067872117">天气</a>（最低夜里可能-5℃）</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 准备行李
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 证件（护照+驾照）</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 衣服（冲锋衣/雨具）</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 食物</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 水</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 无人机</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> starlink 热点 (30 days trial)</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> 景区门票</li>
+</ul>
+<h2 id="总花费">总花费 </h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost (for 5 people)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>机票</td>
+<td>$350/person</td>
+<td>往返直飞 Las Vegas</td>
+</tr>
+<tr>
+<td>租车</td>
+<td>$600（含保险）</td>
+<td>AWD SUV $80/day * 7 days</td>
+</tr>
+<tr>
+<td>油费</td>
+<td>$150</td>
+<td>约1000 miles, 20mpg, $3.5/gallon</td>
+</tr>
+<tr>
+<td>住宿</td>
+<td>$2000</td>
+<td>7晚, 平均$300/day, 2个房间或者suites</td>
+</tr>
+<tr>
+<td>食物</td>
+<td>$350/person</td>
+<td>7天，$50 per day per person</td>
+</tr>
+<tr>
+<td>门票</td>
+<td>~$100/person</td>
+<td>羚羊谷</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>~$1350/person</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="住宿地点">住宿地点 </h2>
+<ul>
+<li>11.22-11.23 Las Vegas</li>
+<li>11.23-11.24 Springdale (Zion National Park)
+<ul>
+<li>OR Orderville <a href="https://www.eastzionresort.com/?_gl=1*ywwlj1*_gcl_au*MzU0MzY4OTkuMTc2MTc4NTgyNw..">小木屋</a></li>
+</ul>
+</li>
+<li>11.24-11.25 Bryce Canyon City (Bryce Canyon National Park)</li>
+<li>11.25-11.26 Page (Antelope Canyon)</li>
+<li>11.26-11.27 Monument Valley</li>
+<li>11.27-11.28 Grand Canyon</li>
+<li>11.28-11.29 Las Vegas</li>
+</ul>
+<h2 id="注意事项">注意事项 </h2>
+<h2 id="saturday-nov-22">Saturday Nov. 22 </h2>
+<h3 id="行程">行程 </h3>
+<h3 id="住宿-las-vegas-nv">住宿 (Las Vegas, NV) </h3>
+<p><strong>Option 1: <a href="https://www.booking.com/hotel/us/towneplace-suites-las-vegas-airport-south.html?aid=318615&amp;label=New_English_EN_IL%3A_Illinois_23537933665-BH7ZfGS_zB56FdolSKk6AgS634117833480%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-64415754265%3Alp9022196%3Ali%3Adec%3Adm%3Aag23537933665%3Acmp363165745&amp;sid=e74941211d4fa29c295140d687ed3acd&amp;all_sr_blocks=642960105_329267982_3_1_0%2C642960101_329267982_2_1_0&amp;checkin=2025-11-22&amp;checkout=2025-11-23&amp;dest_id=12&amp;dest_type=airport&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=5&amp;highlighted_blocks=642960105_329267982_3_1_0%2C642960101_329267982_2_1_0&amp;hpos=5&amp;map=1&amp;matching_block_id=642960105_329267982_3_1_0&amp;no_rooms=2&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA&amp;room2=A%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=642960105_329267982_3_1_0__21900%2C642960101_329267982_2_1_0__21400&amp;srepoch=1761792550&amp;srpvid=7f1813cab60f0043&amp;type=total&amp;ucfs=1&amp;#map_closed">TownePlace Suites Las Vegas Airport South</a></strong><br>
+~$433 2 rooms: (1 king + 1 sofa bed) * 2<br>
+<img src="image-18.png" alt="alt text"><br>
+<img src="image-17.png" alt="alt text"></p>
+<p><strong>Option 2: <a href="https://www.booking.com/hotel/us/best-western-mccarran-inn.html?aid=318615&amp;label=New_English_EN_IL%3A_Illinois_23537933665-BH7ZfGS_zB56FdolSKk6AgS634117833480%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-64415754265%3Alp9022196%3Ali%3Adec%3Adm%3Aag23537933665%3Acmp363165745&amp;sid=e74941211d4fa29c295140d687ed3acd&amp;all_sr_blocks=7689918_378654051_5_1_0&amp;checkin=2025-11-22&amp;checkout=2025-11-23&amp;dest_id=12&amp;dest_type=airport&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=1&amp;highlighted_blocks=7689918_378654051_5_1_0&amp;hpos=1&amp;map=1&amp;matching_block_id=7689918_378654051_5_1_0&amp;no_rooms=1&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA%2CA%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=7689918_378654051_5_1_0__22899&amp;srepoch=1761792658&amp;srpvid=27a31407200c002f&amp;type=total&amp;ucfs=1&amp;#map_closed">Best Western McCarran Inn</a></strong><br>
+~$229 1 room with 2 queen + 1 sofa<br>
+<img src="image-16.png" alt="alt text"><br>
+<img src="image-15.png" alt="alt text"></p>
+<h2 id="sunday-nov-23-zion-national-park">Sunday Nov. 23. (Zion National Park) </h2>
+<h3 id="行程-1">行程 </h3>
+<h3 id="住宿">住宿 </h3>
+<p><strong>Option 1: <a href="https://www.89nine.com/accommodations/">89nine</a></strong><br>
+~$200<br>
+<img src="image-4.png" alt="alt text"><br>
+<img src="image-19.png" alt="alt text"></p>
+<p><strong>Option 2: <a href="https://www.booking.com/hotel/us/the-hideaway-concealed-cabin-east-zion-bryce.html?aid=2049340&amp;label=arizona-2ujR7XydlmUNBwmxTkYhmwS629364173028%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-102373203%3Alp9022196%3Ali%3Adec%3Adm&amp;sid=490865fa87131a422bb8cee87d43199d&amp;all_sr_blocks=1165487602_399639476_5_0_0&amp;checkin=2025-11-23&amp;checkout=2025-11-24&amp;dest_id=20133165&amp;dest_type=city&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=1&amp;highlighted_blocks=1165487602_399639476_5_0_0&amp;hpos=1&amp;matching_block_id=1165487602_399639476_5_0_0&amp;no_rooms=1&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA%2CA%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=1165487602_399639476_5_0_0__25600&amp;srepoch=1761792211&amp;srpvid=913512943dc408b9&amp;type=total&amp;ucfs=1&amp;">The Hideaway Concealed Cabin East Zion &amp; Bryce</a></strong><br>
+~$256, 4 twin beds + 1 king<br>
+<img src="image-5.png" alt="alt text"><br>
+<img src="image-14.png" alt="alt text"></p>
+<h2 id="monday-nov-24-bryce-canyon-national-park">Monday Nov. 24. (Bryce Canyon National Park) </h2>
+<h3 id="行程-2">行程 </h3>
+<h3 id="住宿-bryce-canyon-ut">住宿: Bryce Canyon, UT </h3>
+<p><strong>Option 1: <a href="https://www.booking.com/hotel/us/bwri-bryce-canyon-city-utah.html?aid=2049340&amp;label=arizona-2ujR7XydlmUNBwmxTkYhmwS629364173028%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-102373203%3Alp9022196%3Ali%3Adec%3Adm&amp;sid=490865fa87131a422bb8cee87d43199d&amp;all_sr_blocks=2225412_244924711_3_1_0%2C2225412_244924711_2_1_0&amp;checkin=2025-11-24&amp;checkout=2025-11-25&amp;dest_id=20132714&amp;dest_type=city&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=1&amp;highlighted_blocks=2225412_244924711_3_1_0%2C2225412_244924711_2_1_0&amp;hpos=1&amp;matching_block_id=2225412_244924711_3_1_0&amp;no_rooms=2&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA&amp;room2=A%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=2225412_244924711_3_1_0__13495%2C2225412_244924711_2_1_0__12495&amp;srepoch=1761791588&amp;srpvid=58bf11efaedb06fb&amp;type=total&amp;ucfs=1&amp;">Best Western PLUS Ruby's Inn</a></strong></p>
+<p>~$260<br>
+<img src="image-3.png" alt="alt text"><br>
+<img src="image-13.png" alt="alt text"></p>
+<h2 id="tuesday-nov-25-antelope-canyon">Tuesday Nov. 25. (Antelope Canyon) </h2>
+<h3 id="行程-3">行程 </h3>
+<h3 id="住宿-page-az">住宿: Page, AZ </h3>
+<p><strong>Option 1: <a href="https://www.booking.com/hotel/us/home2-suites-by-hilton-page-lake-powell.html?aid=2049340&amp;label=arizona-2ujR7XydlmUNBwmxTkYhmwS629364173028%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-102373203%3Alp9022196%3Ali%3Adec%3Adm&amp;sid=490865fa87131a422bb8cee87d43199d&amp;all_sr_blocks=627645703_244504362_5_1_0_1069606&amp;checkin=2025-11-26&amp;checkout=2025-11-27&amp;dest_id=20006816&amp;dest_type=city&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=1&amp;highlighted_blocks=627645703_244504362_5_1_0_1069606&amp;hpos=1&amp;matching_block_id=627645703_244504362_5_1_0_1069606&amp;no_rooms=1&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA%2CA%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=627645703_244504362_5_1_0_1069606_14783&amp;srepoch=1761791222&amp;srpvid=56a0113611f20170&amp;type=total&amp;ucfs=1&amp;">Home2 Suites By Hilton </a></strong><br>
+~$340<br>
+<img src="image-1.png" alt="alt text"><br>
+<img src="image-12.png" alt="alt text"></p>
+<p><strong>Option 2: <a href="https://www.booking.com/hotel/us/page.html?aid=2049340&amp;label=arizona-2ujR7XydlmUNBwmxTkYhmwS629364173028%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-102373203%3Alp9022196%3Ali%3Adec%3Adm&amp;sid=490865fa87131a422bb8cee87d43199d&amp;all_sr_blocks=51746906_107703066_3_0_0_1208294%2C51746905_107703066_2_0_0_1208294&amp;checkin=2025-11-26&amp;checkout=2025-11-27&amp;dest_id=20006816&amp;dest_type=city&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=1&amp;highlighted_blocks=51746906_107703066_3_0_0_1208294%2C51746905_107703066_2_0_0_1208294&amp;hpos=1&amp;matching_block_id=51746906_107703066_3_0_0_1208294&amp;no_rooms=2&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA&amp;room2=A%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=51746906_107703066_3_0_0_1208294_5299%2C51746905_107703066_2_0_0_1208294_4999&amp;srepoch=1761791456&amp;srpvid=af4011aed34905cc&amp;type=total&amp;ucfs=1&amp;">Motel 6-Page</a></strong><br>
+~$103<br>
+<img src="image-2.png" alt="alt text"><br>
+<img src="image-10.png" alt="alt text"></p>
+<h2 id="wednesday-nov-26-monument-valley">Wednesday Nov. 26. (Monument Valley) </h2>
+<h3 id="行程-4">行程 </h3>
+<h3 id="住宿-1">住宿 </h3>
+<p><strong>Option 1: <a href="https://www.booking.com/hotel/us/kayenta-monument-valley-inn.html?aid=318615&amp;label=New_English_EN_IL%3A_Illinois_23537933665-BH7ZfGS_zB56FdolSKk6AgS634117833480%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-64415754265%3Alp9022196%3Ali%3Adec%3Adm%3Aag23537933665%3Acmp363165745&amp;sid=e74941211d4fa29c295140d687ed3acd&amp;all_sr_blocks=42895402_412512829_0_0_0&amp;checkin=2025-11-26&amp;checkout=2025-11-27&amp;dest_id=6604&amp;dest_type=region&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=1&amp;highlighted_blocks=42895402_412512829_0_0_0&amp;hpos=1&amp;matching_block_id=42895402_412512829_0_0_0&amp;no_rooms=2&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA&amp;room2=A%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=42895402_412512829_0_0_0__11900&amp;srepoch=1761792899&amp;srpvid=cd7f147c28ce067c&amp;type=total&amp;ucfs=1&amp;">Kayenta Monument Valley Inn</a></strong><br>
+~$119 per room (2 full bed)<br>
+<img src="image-7.png" alt="alt text"><br>
+<img src="image-9.png" alt="alt text"></p>
+<h2 id="thursday-nov-27-grand-canyon">Thursday Nov. 27. (Grand Canyon) </h2>
+<h3 id="行程-5">行程 </h3>
+<h3 id="住宿-2">住宿 </h3>
+<p><strong>Option 1: <a href="https://www.booking.com/hotel/us/hampton-inn-by-hilton-williams.html?aid=318615&amp;label=New_English_EN_IL%3A_Illinois_23537933665-BH7ZfGS_zB56FdolSKk6AgS634117833480%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-64415754265%3Alp9022196%3Ali%3Adec%3Adm%3Aag23537933665%3Acmp363165745&amp;sid=e74941211d4fa29c295140d687ed3acd&amp;all_sr_blocks=893909505_359800740_3_1_0_1035021%2C893909503_359800740_2_1_0_1035021&amp;checkin=2025-11-27&amp;checkout=2025-11-28&amp;dest_id=3615&amp;dest_type=region&amp;dist=0&amp;group_adults=5&amp;group_children=0&amp;hapos=5&amp;highlighted_blocks=893909505_359800740_3_1_0_1035021%2C893909503_359800740_2_1_0_1035021&amp;hpos=5&amp;matching_block_id=893909505_359800740_3_1_0_1035021&amp;no_rooms=2&amp;req_adults=5&amp;req_children=0&amp;room1=A%2CA&amp;room2=A%2CA%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;sr_pri_blocks=893909505_359800740_3_1_0_1035021_12634%2C893909503_359800740_2_1_0_1035021_11655&amp;srepoch=1761793002&amp;srpvid=42a314a745b10673&amp;type=total&amp;ucfs=1&amp;">Hampton Inn by hilton Williams</a></strong><br>
+~$243 for 2 rooms (2 queen each)<br>
+<img src="image-6.png" alt="alt text"><br>
+<img src="image-8.png" alt="alt text"></p>
+<h2 id="friday-nov-28-return-to-las-vegas">Friday Nov. 28. (Return to Las Vegas) </h2>
+<h3 id="行程-6">行程 </h3>
+<h3 id="住宿-3">住宿 </h3>
+<h2 id="saturday-nov-29-las-vegas-to-uiuc">Saturday Nov. 29. (Las Vegas to UIUC) </h2>
+<h3 id="行程-7">行程 </h3>
+<h3 id="住宿-4">住宿 </h3>
+<h2 id="sunday-nov-30">Sunday Nov. 30. </h2>
+<h3 id="行程-8">行程 </h3>
+<h3 id="住宿-5">住宿 </h3>
+</div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
