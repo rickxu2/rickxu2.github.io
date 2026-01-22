@@ -153,7 +153,12 @@ button:hover {
     box-shadow: 0 6px 24px rgba(5,99,193,0.18);
     transform: translateY(-2px) scale(1.01);
 }
-
+/* Make buttons in course cards display one per line */
+.course .btn {
+    display: block;
+    width: max-content;
+    margin: 0.2em 0 0.2em 0;
+}
 /* Optional smaller headings inside a course card */
 h4 {
     font-size: 1.1em;
